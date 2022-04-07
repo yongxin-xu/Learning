@@ -9,9 +9,10 @@ import (
 var wg sync.WaitGroup
 
 func sender(ch chan int) {
-	fmt.Println("sender start...")
+	fmt.Println("sender starts...")
 	ch <- 5
 	ch <- 4 // stuck here
+	fmt.Println("sender ends...")
 	wg.Done()
 }
 
