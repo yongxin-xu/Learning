@@ -1,0 +1,12 @@
+R1 sleep 6 seconds
+Here comes the range 0
+R2 sleep 3 seconds
+Here comes the range 2
+R3 sleep 9 seconds
+Here comes the range 1
+R2 write to channel 2
+str info: R2
+R1 write to channel 1
+str info: R1
+R3 write to channel 3
+str info: R3
